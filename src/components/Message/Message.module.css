@@ -1,0 +1,76 @@
+.message {
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+}
+
+.message header {
+    display: flex;
+    gap: 10px;
+
+    & title {
+        display: block;
+        color: #808080;
+    }
+
+    & title h3 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    & title h5 {
+        margin-top: 6px;
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 9px;
+    }
+}
+
+.message section {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+
+    & p {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        letter-spacing: -0.035em;
+
+        color: #333333;
+    }
+}
+
+.avatar {
+    max-width: 36px;
+}
+
+.time {
+    max-width: 36px;
+}
+
+.media {
+    max-width: 259px;
+    margin-left: 46px;
+}
+
+.tags {
+    margin-top: 7px;
+    list-style: none;
+}
+
+.tag {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #CDCDCD;
+}

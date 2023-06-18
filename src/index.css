@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url('./fonts/Lato/Lato-Black.ttf') format('truetype');
+}
