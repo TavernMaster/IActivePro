@@ -37,13 +37,18 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpg|svg|ttf)$/,
+				test: /\.(png|jpg|svg)$/,
 				use: [
 					{
 						loader: 'file-loader',
 					},
 				],
 			},
+			{
+				test: /\.(ttf|otf)$/,
+				type: 'asset/resource',
+				dependency: { not: ['url'] },
+			  },
 		],
 	},
 	plugins: [

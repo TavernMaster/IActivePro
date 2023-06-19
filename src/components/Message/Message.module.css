@@ -1,12 +1,17 @@
 .message {
+    position: relative;
     border-radius: 15px;
     background-color: white;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 28px 10px;
 }
 
 .message header {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+
+    & .avatar {
+        max-width: 36px;
+    }
 
     & title {
         display: block;
@@ -18,7 +23,6 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 13px;
     }
 
     & title h5 {
@@ -27,50 +31,125 @@
         font-style: italic;
         font-weight: 400;
         font-size: 12px;
-        line-height: 9px;
+    }
+
+    & .star {
+        position: absolute;
+        cursor: pointer;
+        top: 14px;
+        right: 11px;
+        left: auto;
+        bottom: auto;
+        filter: invert(55%) sepia(0%) saturate(1078%) hue-rotate(200deg) brightness(91%) contrast(86%);
+        user-select: none;
+    }
+
+    & .favoriteStar {
+        position: absolute;
+        cursor: pointer;
+        top: 14px;
+        right: 11px;
+        left: auto;
+        bottom: auto;
+        filter: invert(43%) sepia(77%) saturate(3874%) hue-rotate(184deg) brightness(96%) contrast(104%);
+        user-select: none;
+    }
+
+    & .star:hover {
+        scale: 1.1;
+    }
+
+    & .favoriteStar:hover {
+        scale: 1.1;
     }
 }
 
 .message section {
     margin-top: 8px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 
-    & p {
-        font-family: Lato;
+    & time {
+        max-width: 36px;
+    
+        font-family: 'Lato';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 22px;
+        text-align: center;
 
-        letter-spacing: -0.035em;
+        color: #808080;
+    }
 
-        color: #333333;
+    & .contents {
+        
+        & p {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+    
+            letter-spacing: -0.035em;
+    
+            color: #333333;
+        }
+
+        & p + .media {
+            margin-top: 8px;
+        }
+
     }
 }
 
-.avatar {
-    max-width: 36px;
-}
-
-.time {
-    max-width: 36px;
-}
-
 .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 259px;
-    margin-left: 46px;
+    margin-top: 3px;
+
+    &:hover .play {
+        scale: 1.1;
+    }
+
+    & video {
+        max-width: 259px;
+        cursor: pointer;
+    }
+
+    & .play {
+        position: absolute;
+        cursor: pointer;
+        filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(310deg) brightness(101%) contrast(111%);
+    }
+
+    & .play:hover {
+        scale: 1.1;
+    }
 }
+
 
 .tags {
-    margin-top: 7px;
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    left: 10px;
+    bottom: 11px;
     list-style: none;
 }
 
 .tag {
     font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 10px;
+
     color: #CDCDCD;
+}
+
+.firstTag {
+    color: #0088EE;
 }

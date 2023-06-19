@@ -5,21 +5,8 @@
 }
 
 @font-face {
-    font-family: Lato;
-    font-style: normal;
+    font-family: 'Lato';
     font-weight: 400;
-    src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Lato;
     font-style: normal;
-    font-weight: 900;
-    src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Lato;
-    font-weight: 900;
-    src: url('./fonts/Lato/Lato-Black.ttf') format('truetype');
+    src: url('./fonts/Lato/Lato-regular.otf') format('opentype');
 }
