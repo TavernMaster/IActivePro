@@ -45,6 +45,7 @@ body {
     border: none;
     background: white;
     border-radius: 5px;
+    cursor: pointer;
 
     height: 30px;
     width: 200px;
