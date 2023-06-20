@@ -3,13 +3,16 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin: 20px auto;
     max-width: 1200px;
     background-color: #E5E5E5;
     padding: 20px;
     border-radius: 15px;
 
-    & header {
+    & .sort {
         display: flex;
         gap: 8px;
 
@@ -26,17 +29,22 @@ body {
             outline: none;
             height: 20px;
             cursor: pointer;
+            border-radius: 5px;
         }
     }
+}
+
+.oldMessagesButton {
+    border: none;
+    background: white;
+    border-radius: 5px;
+
+    height: 30px;
+    width: 200px;
 }
 
 .messages {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 15px;
-}
-
-.reverse {
-    flex-direction: column-reverse;
 }

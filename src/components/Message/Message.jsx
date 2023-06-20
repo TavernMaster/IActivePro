@@ -31,7 +31,7 @@ const Message = ({id, postName, author, date, content, attachments, tags}) => {
 					{postName && <h5>{postName}</h5>}
 				</title>
 				{favorites && favorites.includes(id) ? (
-					<img className={styles.favoriteStar} src={starSolid} width="23px" alt="Добавить в избранное" onClick={() => dispatch(removeFavoriteMessage(id))} />
+					<img className={styles.favoriteStar} src={starSolid} width="23px" alt="Убрать из избранного" onClick={() => dispatch(removeFavoriteMessage(id))} />
 				) : (
 					<img className={styles.star} src={starRegular} width="23px" alt="Добавить в избранное" onClick={() => dispatch(addFavoriteMessage(id))} />
 				)}
@@ -44,7 +44,7 @@ const Message = ({id, postName, author, date, content, attachments, tags}) => {
 					{attachments &&
 						attachments.map((media, index) => {
 							return media.type === 'image' ? (
-								<img key={index} src={media.url} className={styles.media} />
+								<img key={index} src={media.url} alt='Картинка в посте' className={styles.media} />
 							) : (
 								<div
 									key={index}
