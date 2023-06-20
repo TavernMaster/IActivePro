@@ -74,8 +74,8 @@ const App = () => {
 						Загрузить предыдущие
 					</button>
 				)}
-				{isLoading && <h3>Загрузка сообщений...</h3>}
-				{error && <h3>Ошибка загрузки сообщений</h3>}
+				{isLoading && <h3 className={styles.alert}>Загрузка сообщений...</h3>}
+				{error && <h3 className={styles.alert}>Ошибка загрузки сообщений</h3>}
 
 				<div className={styles.messages}>
 					{messages &&
